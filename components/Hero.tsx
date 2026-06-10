@@ -148,7 +148,7 @@ export default function Hero() {
             {/* Live booking badge */}
             <div className="absolute bottom-8 right-8 bg-white rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-lg border border-black/5">
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-xs text-[#4A5568] font-medium">4,200+ bookings made</span>
+              <span className="text-xs text-[#4A5568] font-medium">50+ bookings made</span>
             </div>
           </div>
         </div>

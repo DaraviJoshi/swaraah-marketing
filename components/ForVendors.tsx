@@ -38,7 +38,7 @@ export default function ForVendors() {
               <span className="gradient-text">Business With Us</span>
             </h2>
             <p className="text-white/55 text-lg leading-relaxed mb-8">
-              Join 240+ vendors already on VoyageLocal. Whether you run a boutique
+              Join 240+ vendors already on Swaraah. Whether you run a boutique
               guesthouse, a trekking agency, or a heritage restaurant — list your
               business and reach travellers ready to book.
             </p>

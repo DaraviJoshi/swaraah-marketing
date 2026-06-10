@@ -37,7 +37,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB703] flex items-center justify-center">
                 <span className="text-white font-bold text-sm">VL</span>
               </div>
-              <span className="font-playfair font-bold text-lg text-white">VoyageLocal</span>
+              <span className="font-playfair font-bold text-lg text-white">Swaraah</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-[200px]">
               Discover India, Your Way. Hotels, activities, food &amp; transport — all in one marketplace.
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-sm">
-            © 2026 VoyageLocal. All rights reserved. Built with ❤️ in India.
+            © 2026 Swaraah. All rights reserved. Built with ❤️ in India.
           </p>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-2 text-white/25 text-xs">

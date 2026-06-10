@@ -86,7 +86,7 @@ export default function ExploreHighlight() {
               <span className="gradient-text">Near You</span>
             </h2>
             <p className="text-[#4A5568] text-lg leading-relaxed mb-10">
-              Not just bookings — VoyageLocal helps you discover real India.
+              Not just bookings — Swaraah helps you discover real India.
               Check in at local landmarks, browse community photos, read authentic
               reviews, and earn Voyage Coins for contributing to the community.
             </p>

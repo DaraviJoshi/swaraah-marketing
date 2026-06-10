@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const STATS = [
   { value: 720, suffix: '+', label: 'Properties Listed', sub: 'Across 100+ cities' },
-  { value: 4200, suffix: '+', label: 'Bookings Made', sub: 'And counting daily' },
+  { value: 50, suffix: '+', label: 'Bookings Made', sub: 'And counting daily' },
   { value: 240, suffix: '+', label: 'Active Vendors', sub: 'Hotels, agencies & more' },
   { value: 98, suffix: '%', label: 'Satisfaction Rate', sub: 'From verified reviews' },
 ]
@@ -65,7 +65,7 @@ export default function Stats() {
             Platform Numbers
           </span>
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white">
-            VoyageLocal by the Numbers
+            Swaraah by the Numbers
           </h2>
         </div>
 

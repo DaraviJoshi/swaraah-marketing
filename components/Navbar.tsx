@@ -32,7 +32,7 @@ export default function Navbar() {
           <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB703] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
             <span className="text-white font-bold text-sm tracking-tight">VL</span>
           </div>
-          <span className="font-playfair font-bold text-lg text-[#0D1B2A]">VoyageLocal</span>
+          <span className="font-playfair font-bold text-lg text-[#0D1B2A]">Swaraah</span>
         </a>
 
         {/* Desktop links */}
