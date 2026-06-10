@@ -49,13 +49,13 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[#0D1B2A] overflow-hidden">
-      {/* Background atmosphere */}
+    <section className="relative min-h-screen flex items-center bg-[#FAFAF8] overflow-hidden">
+      {/* Background atmosphere — warm soft blobs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full bg-[#FF6B35]/8 blur-[120px] animate-pulse-slow" />
-        <div className="absolute bottom-0 -left-40 w-[600px] h-[500px] rounded-full bg-[#1E3A5F]/60 blur-[100px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[#00B4D8]/4 blur-[140px]" />
-        <div className="absolute inset-0 dot-grid" />
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#FF6B35]/10 blur-[120px]" />
+        <div className="absolute bottom-0 -left-40 w-[500px] h-[400px] rounded-full bg-[#FFB703]/10 blur-[100px]" />
+        <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full bg-[#00B4D8]/6 blur-[80px]" />
+        <div className="absolute inset-0 dot-grid-light" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 pt-28 pb-20 w-full">
@@ -64,19 +64,19 @@ export default function Hero() {
           {/* ── Left: Copy ── */}
           <div>
             {/* Status badge */}
-            <div className="inline-flex items-center gap-2 bg-white/6 border border-white/10 rounded-full px-4 py-2 text-xs text-white/60 mb-8">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-[#FF6B35]/8 border border-[#FF6B35]/20 rounded-full px-4 py-2 text-xs text-[#FF6B35] font-medium mb-8">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
               India's Local Travel Marketplace · Now Live
             </div>
 
-            <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.08] mb-6 tracking-tight">
+            <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold text-[#0D1B2A] leading-[1.08] mb-6 tracking-tight">
               Discover{' '}
               <span className="gradient-text">India,</span>
               <br />
               Your Way.
             </h1>
 
-            <p className="text-lg text-white/55 leading-relaxed mb-10 max-w-[480px]">
+            <p className="text-lg text-[#4A5568] leading-relaxed mb-10 max-w-[480px]">
               Hotels, activities, restaurants &amp; transport — all in one marketplace.
               Built for the real India travel experience, powered by verified local vendors.
             </p>
@@ -84,13 +84,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
                 href="https://app.swaraah.in"
-                className="inline-flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#E85520] text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 orange-glow hover:-translate-y-0.5 hover:shadow-2xl"
+                className="inline-flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#E85520] text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 orange-glow hover:-translate-y-0.5"
               >
                 Explore Now <ArrowRight size={18} />
               </a>
               <a
                 href="#vendors"
-                className="inline-flex items-center justify-center gap-2 glass-card hover:bg-white/10 text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F5F0EB] text-[#0D1B2A] border border-black/10 px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 shadow-sm"
               >
                 For Travel Vendors
               </a>
@@ -106,7 +106,7 @@ export default function Hero() {
               ].map(chip => (
                 <span
                   key={chip}
-                  className="text-xs text-white/45 bg-white/5 border border-white/8 px-3 py-1.5 rounded-full"
+                  className="text-xs text-[#718096] bg-white border border-black/8 px-3 py-1.5 rounded-full shadow-sm"
                 >
                   {chip}
                 </span>
@@ -118,9 +118,9 @@ export default function Hero() {
           <div className="relative hidden lg:block h-[520px]">
             {/* Orbit rings */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-72 h-72 rounded-full border border-white/4" />
-              <div className="absolute w-52 h-52 rounded-full border border-white/6" />
-              <div className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-[#FF6B35]/20 to-[#FFB703]/10 flex items-center justify-center">
+              <div className="w-72 h-72 rounded-full border border-[#FF6B35]/12" />
+              <div className="absolute w-52 h-52 rounded-full border border-[#FF6B35]/18" />
+              <div className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-[#FF6B35]/15 to-[#FFB703]/10 flex items-center justify-center shadow-xl">
                 <MapPin className="w-9 h-9 text-[#FF6B35]" />
               </div>
             </div>
@@ -129,32 +129,32 @@ export default function Hero() {
             {DESTINATIONS.map(d => (
               <div
                 key={d.name}
-                className={`absolute glass-card rounded-2xl p-3.5 w-44 ${d.style}`}
+                className={`absolute bg-white rounded-2xl p-3.5 w-44 shadow-xl border border-black/5 ${d.style}`}
               >
                 <div className="flex items-center gap-2.5 mb-2">
                   <span className="text-2xl leading-none">{d.emoji}</span>
                   <div>
-                    <div className="text-white font-semibold text-sm leading-tight">{d.name}</div>
-                    <div className="text-white/45 text-xs">{d.sub}</div>
+                    <div className="text-[#0D1B2A] font-semibold text-sm leading-tight">{d.name}</div>
+                    <div className="text-[#9CA3AF] text-xs">{d.sub}</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-1">
                   <Star className="w-3 h-3 text-[#FFB703] fill-[#FFB703]" />
-                  <span className="text-xs text-white/60">{d.rating} · {d.detail}</span>
+                  <span className="text-xs text-[#6B7280]">{d.rating} · {d.detail}</span>
                 </div>
               </div>
             ))}
 
             {/* Live booking badge */}
-            <div className="absolute bottom-8 right-8 glass-card rounded-xl px-4 py-2.5 flex items-center gap-2.5">
-              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-xs text-white/70 font-medium">4,200+ bookings made</span>
+            <div className="absolute bottom-8 right-8 bg-white rounded-xl px-4 py-2.5 flex items-center gap-2.5 shadow-lg border border-black/5">
+              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="text-xs text-[#4A5568] font-medium">4,200+ bookings made</span>
             </div>
           </div>
         </div>
 
         {/* Bottom stats strip */}
-        <div className="mt-16 pt-8 border-t border-white/6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="mt-16 pt-8 border-t border-black/6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { n: '720+', l: 'Properties' },
             { n: '720+', l: 'Activities' },
@@ -162,8 +162,8 @@ export default function Hero() {
             { n: '720+', l: 'Vehicles' },
           ].map(s => (
             <div key={s.l}>
-              <div className="font-playfair text-3xl font-bold text-white">{s.n}</div>
-              <div className="text-sm text-white/45 mt-1">{s.l} Listed</div>
+              <div className="font-playfair text-3xl font-bold text-[#0D1B2A]">{s.n}</div>
+              <div className="text-sm text-[#9CA3AF] mt-1">{s.l} Listed</div>
             </div>
           ))}
         </div>

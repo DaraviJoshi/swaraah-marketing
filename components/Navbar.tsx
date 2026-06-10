@@ -22,17 +22,17 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0D1B2A]/95 backdrop-blur-lg shadow-xl border-b border-white/5'
+          ? 'bg-white/95 backdrop-blur-lg shadow-sm border-b border-black/5'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB703] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB703] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
             <span className="text-white font-bold text-sm tracking-tight">VL</span>
           </div>
-          <span className="font-playfair font-bold text-lg text-white">VoyageLocal</span>
+          <span className="font-playfair font-bold text-lg text-[#0D1B2A]">VoyageLocal</span>
         </a>
 
         {/* Desktop links */}
@@ -41,7 +41,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-white/60 hover:text-white text-sm font-medium transition-colors"
+              className="text-[#4A5568] hover:text-[#0D1B2A] text-sm font-medium transition-colors"
             >
               {l.label}
             </a>
@@ -52,13 +52,13 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <a
             href="https://app.swaraah.in"
-            className="text-white/60 hover:text-white text-sm font-medium transition-colors"
+            className="text-[#4A5568] hover:text-[#0D1B2A] text-sm font-medium transition-colors"
           >
             Sign In
           </a>
           <a
             href="https://app.swaraah.in"
-            className="bg-[#FF6B35] hover:bg-[#E85520] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-px"
+            className="bg-[#FF6B35] hover:bg-[#E85520] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-orange-200 hover:-translate-y-px"
           >
             Launch App →
           </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-white/80 hover:text-white p-1"
+          className="md:hidden text-[#0D1B2A]/70 hover:text-[#0D1B2A] p-1"
           onClick={() => setOpen(v => !v)}
           aria-label="Toggle menu"
         >
@@ -78,14 +78,14 @@ export default function Navbar() {
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
           open ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'
-        } bg-[#0D1B2A]/98 backdrop-blur-lg border-b border-white/8`}
+        } bg-white border-b border-black/8 shadow-lg`}
       >
         <div className="px-6 py-5 flex flex-col gap-1">
           {NAV_LINKS.map(l => (
             <a
               key={l.href}
               href={l.href}
-              className="text-white/70 hover:text-white text-base py-2.5 border-b border-white/5"
+              className="text-[#4A5568] hover:text-[#0D1B2A] text-base py-2.5 border-b border-black/5"
               onClick={() => setOpen(false)}
             >
               {l.label}

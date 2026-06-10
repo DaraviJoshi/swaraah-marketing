@@ -8,7 +8,7 @@ const STATS = [
   { value: 98, suffix: '%', label: 'Satisfaction Rate', sub: 'From verified reviews' },
 ]
 
-function useCountUp(target: number, duration = 2000, started: boolean) {
+function useCountUp(target: number, duration = 1800, started: boolean) {
   const [count, setCount] = useState(0)
   useEffect(() => {
     if (!started) return
@@ -27,13 +27,13 @@ function useCountUp(target: number, duration = 2000, started: boolean) {
 function StatCard({ value, suffix, label, sub, started }: typeof STATS[0] & { started: boolean }) {
   const count = useCountUp(value, 1800, started)
   return (
-    <div className="text-center group">
-      <div className="font-playfair text-5xl md:text-6xl font-bold text-white mb-2">
+    <div className="text-center">
+      <div className="font-playfair text-5xl md:text-6xl font-bold mb-2">
         <span className="gradient-text">{count.toLocaleString('en-IN')}</span>
         <span className="text-[#FF6B35]">{suffix}</span>
       </div>
       <div className="text-white font-semibold text-lg mb-1">{label}</div>
-      <div className="text-white/40 text-sm">{sub}</div>
+      <div className="text-white/50 text-sm">{sub}</div>
     </div>
   )
 }
@@ -52,10 +52,12 @@ export default function Stats() {
   }, [])
 
   return (
-    <section className="section-pad relative overflow-hidden" ref={ref}>
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#FF6B35]/10 via-[#0D1B2A] to-[#1E3A5F]/20" />
-      <div className="absolute inset-0 dot-grid" />
+    <section className="section-pad relative overflow-hidden bg-[#0D1B2A]" ref={ref}>
+      <div className="absolute inset-0">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#FF6B35]/8 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#1E3A5F]/60 blur-[80px]" />
+        <div className="absolute inset-0 dot-grid-dark" />
+      </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
@@ -73,7 +75,6 @@ export default function Stats() {
           ))}
         </div>
 
-        {/* Divider with India map hint */}
         <div className="mt-16 flex items-center justify-center gap-4">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
           <span className="text-2xl">🇮🇳</span>
