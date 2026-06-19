@@ -49,12 +49,12 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center bg-[#FAFAF8] overflow-hidden">
-      {/* Background atmosphere — warm soft blobs */}
+    <section className="relative min-h-screen flex items-center bg-[#F7F9FF] overflow-hidden">
+      {/* Background atmosphere — blue soft blobs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#FF6B35]/10 blur-[120px]" />
-        <div className="absolute bottom-0 -left-40 w-[500px] h-[400px] rounded-full bg-[#FFB703]/10 blur-[100px]" />
-        <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full bg-[#00B4D8]/6 blur-[80px]" />
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#1E6FFF]/10 blur-[120px]" />
+        <div className="absolute bottom-0 -left-40 w-[500px] h-[400px] rounded-full bg-[#6366F1]/10 blur-[100px]" />
+        <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full bg-[#1E6FFF]/6 blur-[80px]" />
         <div className="absolute inset-0 dot-grid-light" />
       </div>
 
@@ -64,12 +64,12 @@ export default function Hero() {
           {/* ── Left: Copy ── */}
           <div>
             {/* Status badge */}
-            <div className="inline-flex items-center gap-2 bg-[#FF6B35]/8 border border-[#FF6B35]/20 rounded-full px-4 py-2 text-xs text-[#FF6B35] font-medium mb-8">
+            <div className="inline-flex items-center gap-2 bg-[#1E6FFF]/8 border border-[#1E6FFF]/20 rounded-full px-4 py-2 text-xs text-[#1E6FFF] font-medium mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
               India's Local Travel Marketplace · Now Live
             </div>
 
-            <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold text-[#0D1B2A] leading-[1.08] mb-6 tracking-tight">
+            <h1 className="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold text-[#0F2D6B] leading-[1.08] mb-6 tracking-tight">
               Discover{' '}
               <span className="gradient-text">India,</span>
               <br />
@@ -84,13 +84,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
                 href="https://app.swaraah.in"
-                className="inline-flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#E85520] text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 orange-glow hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#1E6FFF] hover:bg-[#0A57E8] text-white px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 blue-glow hover:-translate-y-0.5"
               >
                 Explore Now <ArrowRight size={18} />
               </a>
               <a
                 href="#vendors"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#F5F0EB] text-[#0D1B2A] border border-black/10 px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 shadow-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-[#EEF3FF] text-[#0F2D6B] border border-black/10 px-8 py-4 rounded-full font-semibold text-base transition-all duration-200 shadow-sm"
               >
                 For Travel Vendors
               </a>
@@ -118,10 +118,10 @@ export default function Hero() {
           <div className="relative hidden lg:block h-[520px]">
             {/* Orbit rings */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-72 h-72 rounded-full border border-[#FF6B35]/12" />
-              <div className="absolute w-52 h-52 rounded-full border border-[#FF6B35]/18" />
-              <div className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-[#FF6B35]/15 to-[#FFB703]/10 flex items-center justify-center shadow-xl">
-                <MapPin className="w-9 h-9 text-[#FF6B35]" />
+              <div className="w-72 h-72 rounded-full border border-[#1E6FFF]/12" />
+              <div className="absolute w-52 h-52 rounded-full border border-[#1E6FFF]/18" />
+              <div className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-[#1E6FFF]/15 to-[#6366F1]/10 flex items-center justify-center shadow-xl">
+                <MapPin className="w-9 h-9 text-[#1E6FFF]" />
               </div>
             </div>
 
@@ -134,12 +134,12 @@ export default function Hero() {
                 <div className="flex items-center gap-2.5 mb-2">
                   <span className="text-2xl leading-none">{d.emoji}</span>
                   <div>
-                    <div className="text-[#0D1B2A] font-semibold text-sm leading-tight">{d.name}</div>
+                    <div className="text-[#0F2D6B] font-semibold text-sm leading-tight">{d.name}</div>
                     <div className="text-[#9CA3AF] text-xs">{d.sub}</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-1">
-                  <Star className="w-3 h-3 text-[#FFB703] fill-[#FFB703]" />
+                  <Star className="w-3 h-3 text-[#6366F1] fill-[#6366F1]" />
                   <span className="text-xs text-[#6B7280]">{d.rating} · {d.detail}</span>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function Hero() {
             { n: '720+', l: 'Vehicles' },
           ].map(s => (
             <div key={s.l}>
-              <div className="font-playfair text-3xl font-bold text-[#0D1B2A]">{s.n}</div>
+              <div className="font-playfair text-3xl font-bold text-[#0F2D6B]">{s.n}</div>
               <div className="text-sm text-[#9CA3AF] mt-1">{s.l} Listed</div>
             </div>
           ))}

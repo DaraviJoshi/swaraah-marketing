@@ -27,22 +27,22 @@ const LINKS = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060D16] border-t border-white/5">
+    <footer className="bg-[#060D1F] border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Top: brand + links */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-16">
           {/* Brand */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB703] flex items-center justify-center">
-                <span className="text-white font-bold text-sm">VL</span>
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#1E6FFF] to-[#6366F1] flex items-center justify-center">
+                <span className="text-white font-bold text-sm">S</span>
               </div>
               <span className="font-playfair font-bold text-lg text-white">Swaraah</span>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-[200px]">
               Discover India, Your Way. Hotels, activities, food &amp; transport — all in one marketplace.
             </p>
-            {/* Social icons (simple text-links) */}
+            {/* Social icons */}
             <div className="flex gap-4 mt-6">
               {[
                 { label: 'tw', href: '#' },
@@ -52,7 +52,7 @@ export default function Footer() {
                 <a
                   key={s.label}
                   href={s.href}
-                  className="w-8 h-8 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/10 text-xs font-bold transition-all uppercase"
+                  className="w-8 h-8 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center text-white/40 hover:text-white hover:bg-[#1E6FFF]/20 text-xs font-bold transition-all uppercase"
                 >
                   {s.label}
                 </a>
@@ -94,7 +94,7 @@ export default function Footer() {
             </span>
             <a
               href="https://app.swaraah.in"
-              className="text-[#FF6B35] hover:text-[#FFB703] text-sm font-semibold transition-colors"
+              className="text-[#818CF8] hover:text-[#1E6FFF] text-sm font-semibold transition-colors"
             >
               Launch App →
             </a>

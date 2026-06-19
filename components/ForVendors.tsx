@@ -17,11 +17,11 @@ const VENDOR_TYPES = [
 
 export default function ForVendors() {
   return (
-    <section id="vendors" className="section-pad bg-[#0D1B2A] relative overflow-hidden">
+    <section id="vendors" className="section-pad bg-[#080F24] relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FF6B35]/6 via-transparent to-[#1E3A5F]/20" />
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#FF6B35]/6 blur-[120px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1E6FFF]/8 via-transparent to-[#6366F1]/12" />
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-[#1E6FFF]/8 blur-[120px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
@@ -29,7 +29,7 @@ export default function ForVendors() {
 
           {/* Left: Copy */}
           <div>
-            <span className="text-[#FF6B35] text-sm font-semibold uppercase tracking-widest mb-4 block">
+            <span className="text-[#818CF8] text-sm font-semibold uppercase tracking-widest mb-4 block">
               For Travel Vendors
             </span>
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -58,7 +58,7 @@ export default function ForVendors() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://app.swaraah.in"
-                className="inline-flex items-center justify-center gap-2 bg-[#FF6B35] hover:bg-[#E85520] text-white px-8 py-4 rounded-full font-semibold text-base transition-all orange-glow hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#1E6FFF] hover:bg-[#0A57E8] text-white px-8 py-4 rounded-full font-semibold text-base transition-all blue-glow hover:-translate-y-0.5"
               >
                 Register as Vendor →
               </a>
@@ -78,8 +78,8 @@ export default function ForVendors() {
                 key={p.title}
                 className="group glass-card rounded-2xl p-5 hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#FF6B35]/10 border border-[#FF6B35]/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <p.icon className="w-5 h-5 text-[#FF6B35]" />
+                <div className="w-10 h-10 rounded-xl bg-[#1E6FFF]/10 border border-[#1E6FFF]/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <p.icon className="w-5 h-5 text-[#818CF8]" />
                 </div>
                 <h3 className="text-white font-semibold mb-2">{p.title}</h3>
                 <p className="text-white/50 text-sm leading-relaxed">{p.desc}</p>

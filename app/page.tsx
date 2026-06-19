@@ -6,6 +6,7 @@ import Stats from '@/components/Stats'
 import ExploreHighlight from '@/components/ExploreHighlight'
 import ForVendors from '@/components/ForVendors'
 import Testimonials from '@/components/Testimonials'
+import Newsletter from '@/components/Newsletter'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <ExploreHighlight />
       <ForVendors />
       <Testimonials />
+      <Newsletter />
       <Footer />
     </main>
   )

@@ -32,6 +32,8 @@ jobs:
 
       - name: Build (Next.js static export)
         run: npm run build
+        env:
+          NEXT_PUBLIC_NOTIFICATION_URL: ${{ secrets.NEXT_PUBLIC_NOTIFICATION_URL }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

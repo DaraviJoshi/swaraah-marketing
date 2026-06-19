@@ -25,7 +25,7 @@ const REVIEWS = [
     name: 'Neha Agarwal',
     handle: 'Traveller from Mumbai',
     avatar: 'NA',
-    avatarBg: 'from-amber-400 to-orange-500',
+    avatarBg: 'from-violet-400 to-indigo-500',
     rating: 5,
     text: 'As someone who travels solo, the verified vendor badge genuinely gave me confidence. The activity booking in Manali — a guided snow trek — was exactly as described. Driver arrived 5 minutes early with real-time GPS tracking. Will use every trip now.',
     trip: 'Manali, Himachal',
@@ -35,14 +35,14 @@ const REVIEWS = [
 
 export default function Testimonials() {
   return (
-    <section className="section-pad bg-[#FAFAF8]">
+    <section className="section-pad bg-[#F7F9FF]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-[#FF6B35] text-sm font-semibold uppercase tracking-widest mb-4 block">
+          <span className="text-[#1E6FFF] text-sm font-semibold uppercase tracking-widest mb-4 block">
             Real Travellers
           </span>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#0D1B2A] mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#0F2D6B] mb-4">
             What Our Community Says
           </h2>
           <p className="text-[#6B7280] text-lg max-w-xl mx-auto">
@@ -61,7 +61,7 @@ export default function Testimonials() {
               <div className="flex items-center justify-between mb-5">
                 <div className="flex gap-0.5">
                   {Array.from({ length: r.rating }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-[#FFB703] fill-[#FFB703]" />
+                    <Star key={i} className="w-4 h-4 text-[#6366F1] fill-[#6366F1]" />
                   ))}
                 </div>
                 <Quote className="w-8 h-8 text-black/5 group-hover:text-black/8 transition-colors" />
@@ -78,7 +78,7 @@ export default function Testimonials() {
                   {r.avatar}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="text-[#0D1B2A] font-semibold text-sm">{r.name}</div>
+                  <div className="text-[#0F2D6B] font-semibold text-sm">{r.name}</div>
                   <div className="text-[#9CA3AF] text-xs truncate">{r.handle}</div>
                 </div>
                 <div className="text-right shrink-0">

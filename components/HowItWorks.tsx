@@ -16,33 +16,33 @@ const STEPS = [
     step: '02',
     title: 'Browse Verified Listings',
     desc: 'Every property, activity, restaurant and driver is reviewed and verified by our team. Real photos, real reviews, real prices — no surprises.',
-    iconBg: 'bg-orange-50',
-    iconColor: 'text-[#FF6B35]',
-    ring: 'ring-orange-100',
-    num: 'bg-[#FF6B35]',
+    iconBg: 'bg-blue-50',
+    iconColor: 'text-[#1E6FFF]',
+    ring: 'ring-blue-100',
+    num: 'bg-[#1E6FFF]',
   },
   {
     icon: CreditCard,
     step: '03',
     title: 'Book & Pay Securely',
     desc: 'Pay via Razorpay (UPI, cards, net banking). Earn Voyage Coins on every booking. Instant confirmation email, full cancellation transparency.',
-    iconBg: 'bg-amber-50',
-    iconColor: 'text-amber-500',
-    ring: 'ring-amber-100',
-    num: 'bg-amber-500',
+    iconBg: 'bg-indigo-50',
+    iconColor: 'text-indigo-500',
+    ring: 'ring-indigo-100',
+    num: 'bg-indigo-500',
   },
 ]
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="section-pad bg-[#FAFAF8]">
+    <section id="how-it-works" className="section-pad bg-[#F7F9FF]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-[#FF6B35] text-sm font-semibold uppercase tracking-widest mb-4 block">
+          <span className="text-[#1E6FFF] text-sm font-semibold uppercase tracking-widest mb-4 block">
             Simple Process
           </span>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#0D1B2A] mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#0F2D6B] mb-4">
             How It Works
           </h2>
           <p className="text-[#6B7280] text-lg max-w-xl mx-auto">
@@ -53,7 +53,7 @@ export default function HowItWorks() {
         {/* Steps */}
         <div className="grid md:grid-cols-3 gap-8 relative">
           {/* Connecting line (desktop) */}
-          <div className="hidden md:block absolute top-12 left-[calc(16.666%+2rem)] right-[calc(16.666%+2rem)] h-px bg-gradient-to-r from-sky-200 via-orange-200 to-amber-200" />
+          <div className="hidden md:block absolute top-12 left-[calc(16.666%+2rem)] right-[calc(16.666%+2rem)] h-px bg-gradient-to-r from-sky-200 via-blue-200 to-indigo-200" />
 
           {STEPS.map((s, i) => (
             <div key={s.step} className="relative flex flex-col items-center text-center group">
@@ -67,7 +67,7 @@ export default function HowItWorks() {
               <div className="text-xs font-bold uppercase tracking-widest text-[#9CA3AF] mb-2">
                 Step {s.step}
               </div>
-              <h3 className="text-xl font-semibold text-[#0D1B2A] mb-3">{s.title}</h3>
+              <h3 className="text-xl font-semibold text-[#0F2D6B] mb-3">{s.title}</h3>
               <p className="text-[#6B7280] text-sm leading-relaxed max-w-xs mx-auto">{s.desc}</p>
             </div>
           ))}
@@ -77,7 +77,7 @@ export default function HowItWorks() {
         <div className="text-center mt-16">
           <a
             href="https://app.swaraah.in"
-            className="inline-flex items-center gap-2 bg-[#FF6B35] hover:bg-[#E85520] text-white px-10 py-4 rounded-full font-semibold text-base transition-all duration-200 orange-glow hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-[#1E6FFF] hover:bg-[#0A57E8] text-white px-10 py-4 rounded-full font-semibold text-base transition-all duration-200 blue-glow hover:-translate-y-0.5"
           >
             Start Planning Your Trip →
           </a>

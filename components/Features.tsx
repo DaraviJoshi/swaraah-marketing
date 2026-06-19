@@ -71,10 +71,10 @@ export default function Features() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 reveal">
-          <span className="text-[#FF6B35] text-sm font-semibold uppercase tracking-widest mb-4 block">
+          <span className="text-[#1E6FFF] text-sm font-semibold uppercase tracking-widest mb-4 block">
             Everything in One Place
           </span>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#0D1B2A] mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#0F2D6B] mb-4">
             Five Ways to Travel Better
           </h2>
           <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">
@@ -88,7 +88,7 @@ export default function Features() {
           {FEATURES.map((f, i) => (
             <div
               key={f.title}
-              className={`reveal ${f.delay} group relative rounded-2xl p-6 bg-[#FAFAF8] border ${f.border} hover:shadow-lg hover:bg-white hover:-translate-y-1 transition-all duration-300 cursor-default`}
+              className={`reveal ${f.delay} group relative rounded-2xl p-6 bg-[#F7F9FF] border ${f.border} hover:shadow-lg hover:bg-white hover:-translate-y-1 transition-all duration-300 cursor-default`}
             >
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${f.iconBg} mb-5 ${f.iconColor} group-hover:scale-110 transition-transform`}>
@@ -99,11 +99,11 @@ export default function Features() {
               <div className="text-xs text-[#9CA3AF] font-medium uppercase tracking-wider mb-1">
                 {f.tagline}
               </div>
-              <h3 className="text-xl font-semibold text-[#0D1B2A] mb-3">{f.title}</h3>
+              <h3 className="text-xl font-semibold text-[#0F2D6B] mb-3">{f.title}</h3>
               <p className="text-[#6B7280] text-sm leading-relaxed">{f.desc}</p>
 
               {/* Arrow */}
-              <div className="mt-5 flex items-center gap-1 text-sm text-[#9CA3AF] group-hover:text-[#FF6B35] transition-colors">
+              <div className="mt-5 flex items-center gap-1 text-sm text-[#9CA3AF] group-hover:text-[#1E6FFF] transition-colors">
                 <span>Learn more</span>
                 <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
               </div>
@@ -116,12 +116,12 @@ export default function Features() {
           ))}
 
           {/* Coming soon card */}
-          <div className="reveal reveal-delay-2 rounded-2xl p-6 border border-[#FF6B35]/20 bg-gradient-to-br from-[#FFF5F0] to-[#FFFBF5] flex flex-col justify-between">
+          <div className="reveal reveal-delay-2 rounded-2xl p-6 border border-[#1E6FFF]/20 bg-gradient-to-br from-[#EEF4FF] to-[#F0EEFF] flex flex-col justify-between">
             <div>
-              <div className="text-xs text-[#FF6B35] font-semibold uppercase tracking-wider mb-1">
+              <div className="text-xs text-[#1E6FFF] font-semibold uppercase tracking-wider mb-1">
                 Coming Soon
               </div>
-              <h3 className="text-xl font-semibold text-[#0D1B2A] mb-3">Travel Guides</h3>
+              <h3 className="text-xl font-semibold text-[#0F2D6B] mb-3">Travel Guides</h3>
               <p className="text-[#6B7280] text-sm leading-relaxed">
                 Connect with certified local travel guides for personalised consultations,
                 custom itineraries, and referral-based trip planning.
@@ -130,7 +130,7 @@ export default function Features() {
             <div className="mt-6">
               <a
                 href="https://app.swaraah.in"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#FF6B35] hover:text-[#E85520] transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#1E6FFF] hover:text-[#0A57E8] transition-colors"
               >
                 Join the waitlist →
               </a>

@@ -10,12 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          orange: '#FF6B35',
-          'orange-dark': '#E85520',
-          navy: '#0D1B2A',
-          'navy-light': '#1E3A5F',
-          gold: '#FFB703',
-          teal: '#00B4D8',
+          blue: '#1E6FFF',
+          'blue-dark': '#0A57E8',
+          navy: '#0F2D6B',
+          'navy-light': '#1A4494',
+          indigo: '#6366F1',
+          'indigo-light': '#818CF8',
         },
       },
       fontFamily: {

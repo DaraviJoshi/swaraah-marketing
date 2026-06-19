@@ -29,10 +29,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FFB703] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-            <span className="text-white font-bold text-sm tracking-tight">VL</span>
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#1E6FFF] to-[#6366F1] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <span className="text-white font-bold text-sm tracking-tight">S</span>
           </div>
-          <span className="font-playfair font-bold text-lg text-[#0D1B2A]">Swaraah</span>
+          <span className="font-playfair font-bold text-lg text-[#0F2D6B]">Swaraah</span>
         </a>
 
         {/* Desktop links */}
@@ -41,7 +41,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[#4A5568] hover:text-[#0D1B2A] text-sm font-medium transition-colors"
+              className="text-[#4A5568] hover:text-[#0F2D6B] text-sm font-medium transition-colors"
             >
               {l.label}
             </a>
@@ -52,13 +52,13 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <a
             href="https://app.swaraah.in"
-            className="text-[#4A5568] hover:text-[#0D1B2A] text-sm font-medium transition-colors"
+            className="text-[#4A5568] hover:text-[#0F2D6B] text-sm font-medium transition-colors"
           >
             Sign In
           </a>
           <a
             href="https://app.swaraah.in"
-            className="bg-[#FF6B35] hover:bg-[#E85520] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-orange-200 hover:-translate-y-px"
+            className="bg-[#1E6FFF] hover:bg-[#0A57E8] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-blue-200 hover:-translate-y-px"
           >
             Launch App →
           </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-[#0D1B2A]/70 hover:text-[#0D1B2A] p-1"
+          className="md:hidden text-[#0F2D6B]/70 hover:text-[#0F2D6B] p-1"
           onClick={() => setOpen(v => !v)}
           aria-label="Toggle menu"
         >
@@ -85,7 +85,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[#4A5568] hover:text-[#0D1B2A] text-base py-2.5 border-b border-black/5"
+              className="text-[#4A5568] hover:text-[#0F2D6B] text-base py-2.5 border-b border-black/5"
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -93,7 +93,7 @@ export default function Navbar() {
           ))}
           <a
             href="https://app.swaraah.in"
-            className="mt-4 bg-[#FF6B35] text-white py-3 rounded-full text-center font-semibold text-sm"
+            className="mt-4 bg-[#1E6FFF] text-white py-3 rounded-full text-center font-semibold text-sm"
           >
             Launch App →
           </a>
